@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/irssi.css">
+    <title>IRSSI</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo"><a href="index.html" class="logo-link"><img src="assets/img/Logo.png" alt="" class="logo-img"></a></div>
+            <ul class="nav-menu">
+                <li class="nav-dot nav-list"><a href="" class="list-link">News</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Getting Irssi</a></li> 
+                <li class="nav-list"><a href="docs.html" class="list-link">Docs</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Modules</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Themes</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Scripts</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Source Code</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Bugs</a></li> 
+            </ul>
+            <form action="" class="search-bar">
+                <input type="search" id="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+            </form>
+            <div class="mob-nav">
+                <div class="mob-search">
+                    <form action="" class="mob-search-bar">
+                        <input type="checkbox" id="search-check">
+                        <label for="search-check"><i class="fa-solid fa-magnifying-glass search-icon"></i></label>
+                        <div class="search-box"><input type="search" id="search"></div>
+                    </form>
+                </div>
+                <div class="menu-bar">
+                    <input type="checkbox" id="check">
+                    <label for="check"><i class="fa-solid fa-bars"></i></label>
+                    <ul class="mob-nav-menu">
+                        <li class="nav-dot nav-list"><a href="" class="list-link">News</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Getting Irssi</a></li> 
+                        <li class="nav-list"><a href="docs.html" class="list-link">Docs</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Modules</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Themes</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Scripts</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Source Code</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Bugs</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="hero">
+        <div class="hero-title">Your text mode chatting application since 1999</div>
+        <div class="hero-para">IRC built-in. Multi-protocol friendly for module authors. <br class="break"> Shipped-by-default Perl scripting with a wide range of available extensions.</div>
+    </main>
+    <main class="softwares">
+        <div class="software-text">Getting Irssi</div>
+        <div class="software-images">
+            <div class="software-flex">
+                <div class="software-img"><img src="assets/img/logo-img/debian.png" alt="" class="soft-logo"></div>
+                <div class="software-title">Debian</div>
+            </div>
+            <div class="software-flex">
+                <div class="software-img"><img src="assets/img/logo-img/windows.png" alt="" class="soft-logo"></div>
+                <div class="software-title">windows</div>
+            </div>
+            <div class="software-flex">
+                <div class="software-img"><img src="assets/img/logo-img/ubuntu.png" alt="" class="soft-logo"></div>
+                <div class="software-title">ubuntu</div>
+            </div>
+            <div class="software-flex">
+                <div class="software-img"><img src="assets/img/logo-img/gentoo.png" alt="" class="soft-logo"></div>
+                <div class="software-title">gentoo</div>
+            </div>
+            <div class="software-flex">
+                <div class="software-img"><img src="assets/img/logo-img/fedora.png" alt="" class="soft-logo"></div>
+                <div class="software-title">fedora</div>
+            </div>
+            <div class="software-flex">
+                <div class="software-img"><img src="assets/img/logo-img/macOS.png" alt="" class="soft-logo"></div>
+                <div class="software-title">macos</div>
+            </div>
+            <div class="software-flex">
+                <div class="software-img"><img src="assets/img/logo-img/NixOS.png" alt="" class="soft-logo"></div>
+                <div class="software-title">nixos</div>
+            </div>
+            <div class="software-flex">
+                <div class="software-img"><img src="assets/img/logo-img/FreeBSD.png" alt="" class="soft-logo"></div>
+                <div class="software-title">freebsd</div>
+            </div>
+        </div>
+        <div class="install-text"><code class="mono">apt install irssi</code></div>
+    </main>
+    <main class="sources">
+        <div class="source-title">Release Sources &nbsp; <span>Latest release version: <b>1.2.0</b> – NEWS</span></div>
+        <div class="source-border">
+            <div class="source-files">
+                <div class="source-file">
+                    <div class="source-img img-border"><img src="assets/img/text-img/text-1.png" alt="" class="src-img-1"></div>
+                    <div class="source-img"><img src="assets/img/text-img/text-2.png" alt="" class="src-img-2"></div>
+                </div>
+                <div class="source-file">
+                    <div class="source-flex">
+                        <div class="vertical-text">ALT</div>
+                        <div class="source-img img-border"><img src="assets/img/text-img/text-1.png" alt="" class="src-img-1"></div>
+                    </div>
+                    <div class="source-img"><img src="assets/img/text-img/text-2.png" alt="" class="src-img-2"></div>
+                </div>
+            </div>
+            <div class="install-instruction">See the included <b>INSTALL</b> file for building instructions. To verify the signatures:</div>
+            <div class="instruct-code">
+                <code class="mono">gpg --keyserver pgp.mit.edu --recv-keys '7EE6 5E30 82A5 FB06 AC7C 368D 00CC B587 DDBE F0E1'</code>
+            </div>
+            <div class="finger-print-text">You shouldn’t really trust this key without verifying its fingerprint. See it with
+                <a href="" class="finger-link"><b>gpg --fingerprint staff@irssi.org</b></a> and ask someone if it matches (eg. on #irssi).</div>
+            <div class="instruct-code">
+                <code class="mono">gpg --verify irssi-1.2.0.tar.xz.asc</code>
+            </div>
+            <div class="gpg-text">(This key is different from the one used to sign binaries of versions before 0.8.10. More gpg help can be found from GPG manual)</div>
+        </div>
+    </main>
+    <main class="new-post">
+        <div class="new-post-flex">
+            <div class="post-text">What's new</div>
+        <div class="post-flexbox">
+            <div class="post-flex">
+                <div class="post-date">Posted on February 12th 2019</div>
+                <div class="post-title">Irssi 1.2.0 OTR Migration Path</div>
+            </div>
+            <div class="post-flex">
+                <div class="post-date">Posted on February 12th 2019</div>
+                <div class="post-title">Irssi 1.2.0 Released</div>
+            </div>
+            <div class="post-flex">
+                <div class="post-date">Posted on January 24th 2019</div>
+                <div class="post-title">Introducing PyIRCFuzz</div>
+            </div>
+            <div class="post-flex">
+                <div class="post-date">Posted on January 24th 2019</div>
+                <div class="post-title">Security Irssi 1.1.2 Released</div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <main class="modules">
+        <div class="module-flex">
+            <div class="module-text">Modules</div>
+            <div class="module-para">Irssi makes it easy to write protocol modules in C. You can enjoy the chatting power of Irssi in combination with IRC, ICB or SILC. Find more modules on the Modules page.</div>
+            <div class="module-logo">
+                <div class="module-img"><i class="fa-solid fa-box module-icon"></i></div>
+                <div class="module-title"><a href="" class="module-link">View Modules</a></div>
+            </div>
+        </div>
+        <div class="module-flex">
+            <div class="module-text">Themes</div>
+            <div class="module-para">Irssi is completely themeable. Every single message can be themed. True colours can be used in your themes. Check the theme gallery for some impressions.</div>
+            <div class="module-logo">
+                <div class="module-img"><i class="fa-solid fa-palette module-icon"></i></div>
+                <div class="module-title"><a href="" class="module-link">View Themes</a></div>
+            </div>
+        </div>
+    </main>
+    <main class="script">
+        <div class="module-flex">
+            <div class="module-text">Scripting</div>
+            <div class="module-para">Irssi features a sane and minimal scripting API together with a coherent signal handling mechanism.</div>
+            <div class="module-para-2">There are many existing scripts for Irssi, see Finding scripts for some good resources.</div>
+            <div class="module-logo">
+                <div class="module-img"><i class="fa-solid fa-book module-icon"></i></div>
+                <div class="module-title"><a href="" class="module-link">Read more in Docs</a></div>
+            </div>
+        </div>
+        <div class="script-code">
+            <ul class="numbers">
+                <li class="number">1</li>
+                <li class="number">2</li>
+                <li class="number">3</li>
+                <li class="number">4</li>
+                <li class="number">5</li>
+                <li class="number">6</li>
+                <li class="number">7</li>
+                <li class="number">8</li>
+                <li class="number">9</li>
+                <li class="number">10</li>
+                <li class="number">11</li>
+                <li class="number">12</li>
+                <li class="number">13</li>
+                <li class="number">14</li>
+                <li class="number">15</li>
+                <li class="number">16</li>
+                <li class="number">17</li>
+            </ul>
+            <pre class="src-code">sub update_keymap {
+                %nummap = %wnmap = %specialmap = %custom_key_map = ();
+                Irssi::signal_remove('command bind' => 'watch_keymap');
+                Irssi::signal_add_first('print text' => 'get_keymap');
+                Irssi::command('bind');
+                Irssi::signal_remove('print text' => 'get_keymap');
+                for (keys %custom_key_map) {
+                if (exists $custom_key_map{$_} &&
+                    $custom_key_map{$_} =~ s/\01(\w+)\01/exists $custom_key_map{$1} ? $custom_key_map{$1} : "\02"/ge) {
+                    if ($custom_key_map{$_} =~ /\02/) {
+                           delete $custom_key_map{$_};
+                    }
+                    else {
+                           redo;
+                    }
+                  }
+            }</pre>
+        </div>
+    </main>
+    <section class="support-bg">
+        <main class="support">
+            <div class="support-title">Support</div>
+            <div class="support-text">If your irssi crashes, it’s always a bug.</div>
+            <div class="support-para">Please read <b>“How to submit a good bug report?”</b> how-to and send one. For other types of bugs, <br class="break"> it would still be nice to hear of them, but chances are that it’s already known. Send all bug reports <br class="break"> to Irssi’s <b>bug reporting system</b>, but check if it has already been reported first.</div>
+            <div class="support-para-2">You can also contact the Irssi developers on Freenode.</div>
+            <div class="support-bttn"><a href="" class="support-link mono">#irssi</a></div>
+        </main>
+    </section>
+    <footer class="copyright">
+        <div class="copy-text">All the content of this site is copyright © 2000-2019 The Irssi project.</div>
+        <div class="copy-para">Unless otherwise noted, this site is licensed under a <b>© Creative Commons Attribution-ShareAlike 3.0 Unported License.</b></div>
+        <div class="copy-edit"><a href="https://github.com/" class="copy-link">You can edit this page on <b><i class="fa-brands fa-github"></i> GitHub</b></a></div>
+    </footer>
+</body>
+</html>

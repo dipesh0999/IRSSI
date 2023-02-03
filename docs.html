@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/docs.css">
+    <title>Docs</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo"><a href="index.html" class="logo-link"><img src="assets/img/Logo.png" alt="" class="logo-img"></a></div>
+            <ul class="nav-menu">
+                <li class="nav-dot nav-list"><a href="" class="list-link">News</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Getting Irssi</a></li> 
+                <li class="nav-list"><a href="docs.html" class="list-link">Docs</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Modules</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Themes</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Scripts</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Source Code</a></li> 
+                <li class="nav-list"><a href="" class="list-link">Bugs</a></li> 
+            </ul>
+            <form action="" class="search-bar">
+                <input type="search" id="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+            </form>
+            <div class="mob-nav">
+                <div class="mob-search">
+                    <form action="" class="mob-search-bar">
+                        <input type="checkbox" id="search-check">
+                        <label for="search-check"><i class="fa-solid fa-magnifying-glass search-icon"></i></label>
+                        <div class="search-box"><input type="search" id="search"></div>
+                    </form>
+                </div>
+                <div class="menu-bar">
+                    <input type="checkbox" id="check">
+                    <label for="check"><i class="fa-solid fa-bars"></i></label>
+                    <ul class="mob-nav-menu">
+                        <li class="nav-dot nav-list"><a href="" class="list-link">News</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Getting Irssi</a></li> 
+                        <li class="nav-list"><a href="docs.html" class="list-link">Docs</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Modules</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Themes</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Scripts</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Source Code</a></li> 
+                        <li class="nav-list"><a href="" class="list-link">Bugs</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="hero">
+        <div class="hero-title">Docs <span>For Latest release version: <b>1.2.0</b></span></div>
+        <div class="startup">
+            <div class="startup-flex">
+                <div class="startup-title">Startup How-To</div>
+                <div class="startup-text">
+                    <div class="startup-text-para">Copyright (c) 2000-2002 by Timo Sirainen, release under GNU FDL 1.1 license.</div>
+                    <div class="startup-text-title">Index with some FAQ questions that are answered in the chapter:</div>
+                </div>
+                <div class="startup-ordered-list">
+                    <ol class="startup-ol">
+                        <li class="startup-order-list">First Steps</li>
+                        <li class="startup-order-list">Basic user interface usage
+                            <ul class="start-ol-ul">
+                                <li class="ol-ul-li">Split windows work in weird way</li>
+                                <li class="ol-ul-li"> How can I easily switch between windows?</li>
+                                <li class="ol-ul-li"> But alt-1 etc. don’t work!</li>
+                            </ul>
+                        </li>
+                        <li class="startup-order-list">Server and channel automation
+                            <ul class="start-ol-ul">
+                                <li class="ol-ul-li">How do I automatically connect to servers at startup?</li>
+                                <li class="ol-ul-li">How do I automatically join to channels at startup?</li>
+                                <li class="ol-ul-li">How do I automatically send commands to server at connect?</li>
+                            </ul>
+                        </li>
+                        <li class="startup-order-list">Setting up windows and automatically restoring them at startup</li>
+                        <li class="startup-order-list">Status and msgs windows & message levels
+                            <ul class="start-ol-ul">
+                                <li class="ol-ul-li">I want /WHOIS to print reply to current window</li>
+                                <li class="ol-ul-li">I want all messages to go to one window, not create new windows</li>
+                            </ul>
+                        </li>
+                        <li class="startup-order-list">How support for multiple servers works in irssi
+                            <ul class="start-ol-ul">
+                                <li class="ol-ul-li">I connected to some server that doesn’t respond and now irssi keeps trying to reconnect to it again and again, how can I stop it??</li>
+                                <li class="ol-ul-li">I want to have own status and/or msgs window for each servers</li>
+                            </ul>
+                        </li>
+                        <li class="startup-order-list">/LASTLOG and jumping around in scrollback
+                            <ul class="start-ol-ul">
+                                <li class="ol-ul-li">How can I save all texts in a window to file?</li>
+                            </ul>
+                        </li>
+                        <li class="startup-order-list">Logging</li>
+                        <li class="startup-order-list">Changing keyboard bindings
+                            <ul class="start-ol-ul">
+                                <li class="ol-ul-li">How do I make F1 key do something?</li>
+                            </ul>
+                        </li>
+                        <li class="startup-order-list">Proxies and IRC bouncers</li>
+                        <li class="startup-order-list">Irssi’s settings
+                            <ul class="start-ol-ul">
+                                <li class="ol-ul-li">For all the ircII people</li>
+                            </ul>
+                        </li>
+                        <li class="startup-order-list">Statusbar
+                            <ul class="start-ol-ul">
+                                <li class="ol-ul-li">I loaded a statusbar script but it’s not visible anywhere!</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="startup-flex-list">
+                <div class="startup-list">
+                    <div class="list-title">Documentation</div>
+                    <ul class="startup-ul">
+                        <li class="startup-points">Frequently Asked Questions</li>
+                        <li class="startup-points">Startup How-To</li>
+                        <li class="startup-points">Check the built-in /HELP</li>
+                        <li class="startup-points">Settings</li>
+                        <li class="startup-points">Design</li>
+                        <li class="startup-points">Manual, a bit dated and unfinished</li>
+                        <li class="startup-points">Contributing</li>
+                    </ul>
+                </div>
+                <div class="startup-list">
+                    <div class="list-title">Miscellaneous</div>
+                    <ul class="startup-ul">
+                        <li class="startup-points">Tips & Tricks</li>
+                        <li class="startup-points">Irssi Proxy, the mini-bnc module</li>
+                        <li class="startup-points">Colour Formats</li>
+                        <li class="startup-points">Special Variables</li>
+                        <li class="startup-points">Irssi 0.8.17 Tips</li>
+                    </ul>
+                </div>
+                <div class="startup-list">
+                    <div class="list-title">Tutorials</div>
+                    <ul class="startup-ul">
+                        <li class="startup-points">General guide to Irssi and GNU screen</li>
+                        <li class="startup-points">Split windows handling</li>
+                        <li class="startup-points">Split windows handling Addendum</li>
+                        <li class="startup-points">Showing events in different windows</li>
+                        <li class="startup-points">Connecting to networks with SASL</li>
+                    </ul>
+                </div>
+                <div class="startup-list">
+                    <div class="list-title">Scripting</div>
+                    <ul class="startup-ul">
+                        <li class="startup-points">Scripting Tutorial, by Juerd</li>
+                        <li class="startup-points">Perl Scripting Reference</li>
+                        <li class="startup-points">Signals</li>
+                        <li class="startup-points">(Unofficial) Irssi Scripting and Documentation Wiki</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="steps">
+        <div class="first-steps">
+            <div class="first-step-text">1. First steps</div>
+            <div class="first-para">IRC Networks are made of servers, and servers have channels. The default config has a few predefined networks, to list them:</div>
+            <div class="network-code mono">/NETWORK LIST</div>
+            <div class="first-para">And to connect to one of those networks and join a channel:</div>
+            <div class="network-code mono">/CONNECT Freenode <br>/JOIN #irssi</div>
+            <div class="first-para">To add more networks:</div>
+            <div class="network-code mono">/NETWORK ADD ExampleNet</div>
+            <div class="first-para">Then add some servers (with -auto to automatically connect):</div>
+            <div class="network-code mono">/SERVER ADD -auto -network ExampleNet irc.example.net</div>
+            <div class="first-para">Automatically join to channels after connected to server:</div>
+            <div class="network-code mono">/CHANNEL ADD -auto #lounge ExampleNet</div>
+            <div class="first-para">To modify existing networks (or servers, or channels) just ADD again using the same name as before. This configures a network to identify with nickserv and wait for 2 seconds before joining channels:</div>
+            <div class="network-code mono">/NETWORK ADD -autosendcmd "/^msg nickserv ident pass;wait 2000" ExampleNet</div>
+            <div class="first-para">If you have irssi 0.8.18 or higher and the irc network supports it, you can use SASL instead of nickserv, which is more reliable:</div>
+            <div class="network-code mono">/NETWORK ADD -sasl_username yourname -sasl_password yourpassword -sasl_mechanism P</div>
+        </div>
+    </main>
+    <footer class="copyright">
+        <div class="copy-text">All the content of this site is copyright © 2000-2019 The Irssi project.</div>
+        <div class="copy-para">Unless otherwise noted, this site is licensed under a <b>© Creative Commons Attribution-ShareAlike 3.0 Unported License.</b></div>
+        <div class="copy-edit"><a href="https://github.com/" class="copy-link">You can edit this page on <b><i class="fa-brands fa-github"></i> GitHub</b></a></div>
+    </footer>
+</body>
+</html>
