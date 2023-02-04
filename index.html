@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <div class="nav-logo"><a href="index.html" class="logo-link"><img src="assets/img/Logo.png" alt="" class="logo-img"></a></div>
+            <div class="nav-logo"><a href="index.html" class="logo-link"><img src="assets/img/Logo.svg" alt="" class="logo-img"></a></div>
             <ul class="nav-menu">
                 <li class="nav-dot nav-list"><a href="" class="list-link">News</a></li> 
                 <li class="nav-list"><a href="" class="list-link">Getting Irssi</a></li> 
@@ -98,15 +98,15 @@
         <div class="source-border">
             <div class="source-files">
                 <div class="source-file">
-                    <div class="source-img img-border"><img src="assets/img/text-img/text-1.png" alt="" class="src-img-1"></div>
-                    <div class="source-img"><img src="assets/img/text-img/text-2.png" alt="" class="src-img-2"></div>
+                    <div class="source-img img-border"><img src="assets/img/text-img/text-1.svg" alt="" class="src-img"></div>
+                    <div class="source-img"><img src="assets/img/text-img/text-2.svg" alt="" class="src-img"></div>
                 </div>
                 <div class="source-file">
                     <div class="source-flex">
                         <div class="vertical-text">ALT</div>
-                        <div class="source-img img-border"><img src="assets/img/text-img/text-1.png" alt="" class="src-img-1"></div>
+                        <div class="source-img img-border"><img src="assets/img/text-img/text-1.svg" alt="" class="src-img"></div>
                     </div>
-                    <div class="source-img"><img src="assets/img/text-img/text-2.png" alt="" class="src-img-2"></div>
+                    <div class="source-img"><img src="assets/img/text-img/text-2.svg" alt="" class="src-img"></div>
                 </div>
             </div>
             <div class="install-instruction">See the included <b>INSTALL</b> file for building instructions. To verify the signatures:</div>
@@ -192,20 +192,20 @@
                 <li class="number">16</li>
                 <li class="number">17</li>
             </ul>
-            <pre class="src-code">sub update_keymap {
-                %nummap = %wnmap = %specialmap = %custom_key_map = ();
-                Irssi::signal_remove('command bind' => 'watch_keymap');
-                Irssi::signal_add_first('print text' => 'get_keymap');
-                Irssi::command('bind');
-                Irssi::signal_remove('print text' => 'get_keymap');
-                for (keys %custom_key_map) {
-                if (exists $custom_key_map{$_} &&
-                    $custom_key_map{$_} =~ s/\01(\w+)\01/exists $custom_key_map{$1} ? $custom_key_map{$1} : "\02"/ge) {
-                    if ($custom_key_map{$_} =~ /\02/) {
-                           delete $custom_key_map{$_};
+            <pre class="src-code"><span class="dark-purple">sub</span> <span class="orange">update_keymap</span> {
+                %<span class="purple">nummap</span> = %<span class="purple">wnmap</span> = %<span class="purple">specialmap</span> = %<span class="purple">custom_key_map</span> = ();
+                <span class="pink">Irssi</span>::signal_remove(<span class="lightblue">'command bind'</span> => <span class="lightblue">'watch_keymap'</span>);
+                <span class="pink">Irssi</span>::signal_add_first( <span class="lightblue">'print text'</span> => <span class="lightblue">'get_keymap'</span>);
+                <span class="pink">Irssi</span>::command(<span class="lightblue">'bind'</span>);
+                <span class="pink">Irssi</span>::signal_remove( <span class="lightblue">'print text'</span> => <span class="lightblue">'get_keymap'</span>);
+                <span class="dark-purple">for</span> (<span class="dark-purple">keys</span> %<span class="purple">custom_key_map</span>) {
+                <span class="dark-purple">if</span> (<span class="dark-purple">exists</span> $<span class="purple">custom_key_map</span>{$_} &&
+                    $<span class="purple">custom_key_map</span>{$_} =~ <span class="dark-purple">s/</span> <span class="lightblue">\01(\w+)\01/exists</span> $<span class="purple">custom_key_map</span>{$1} ? $<span class="purple">custom_key_map</span>{$1} : <span class="lightblue">"\02"/ge</span>) {
+                    <span class="dark-purple">if</span> ($<span class="purple">custom_key_map</span>{$_} =~ <span class="dark-purple">/</span> <span class="lightblue">\02/</span>) {
+                           <span class="dark-purple">delete</span> $<span class="purple">custom_key_map</span>{$_};
                     }
-                    else {
-                           redo;
+                    <span class="dark-purple">else</span> {
+                           <span class="dark-purple">redo</span>;
                     }
                   }
             }</pre>
