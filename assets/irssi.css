@@ -191,6 +191,9 @@ li::marker{
     text-align: center;
     border-radius: 6px;
 }
+.src-img{
+    height: 18px;
+}
 .source-img{
     padding: 20px 63px;
 }
@@ -200,7 +203,8 @@ li::marker{
 .vertical-text{
     background-color: #EDEDEF;
     writing-mode: vertical-rl;
-    padding: 26px 2px;
+    padding: 20px 2px;
+    height: 62px;
     rotate: 180deg;
     color: rgba( 24, 18, 38, .2);
     font-weight: 800;
@@ -358,6 +362,22 @@ li::marker{
     overflow: hidden;
     padding: 20px 0px;
 }
+.dark-purple{
+    color: #5F4B8B;
+}
+.orange{
+    color: #D67400;
+}
+.purple{
+    color: #5E00D6;
+}
+.pink{
+    color: #D70751;
+}
+.lightblue{
+    color: #0078D6;
+}
+
 .support-bg{
     width: 1116px;
     margin: 0px auto 60px;
